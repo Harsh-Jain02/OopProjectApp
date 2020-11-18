@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/heading_anjuna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Anjuna Beach"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:textColor="@color/black"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/heading_anjuna">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imganjuna"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                app:srcCompat="@drawable/anjuna" />
+            <TextView
+                android:id="@+id/info_anjuna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/imganjuna"
+                android:text="Anjuna is a village located on the coast of North Goa, India. It is a Census Town, one of the twelve Brahmin comunidades of Bardez. It is mostly a tourist destination. Its church, St. Michael's Church, Anjuna, founded in 1595, is dedicated to S. Miguel, and celebrates the feasts of S. Miguel (29 September) and Nossa Senhora Advogada (second week of January). There are three large chapels in the parish: the one to S. Antonio (Praias), to Nossa Senhora de Saude (Mazalvaddo), and to Nossa Senhora de Piedade (Grande Chinvar). The chapel at Vagator became the church of the new parish of Vagator, dedicated to S. Antonio, in the twentieth century. "
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/q_anjuna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info_anjuna"
+                android:text="\nPlease give your ratings:- "
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <RatingBar
+                android:id="@+id/rateanjuna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/q_anjuna"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

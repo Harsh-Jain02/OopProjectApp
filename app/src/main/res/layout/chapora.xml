@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/heading_chapora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Chapora Beach"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:textColor="@color/black"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/heading_chapora">
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <ImageView
+                 android:id="@+id/imgchapora"
+                 android:layout_width="match_parent"
+                 android:layout_height="280dp"
+                 app:srcCompat="@drawable/chapora" />
+             <TextView
+                 android:id="@+id/info_chapora"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:textAlignment="center"
+                 android:gravity="center_horizontal"
+                 android:layout_below="@+id/imgchapora"
+                 android:text="Chapora Beach is a coastal village at Chapora River estuary lying alongside a beach stretch in North Goa that is around 10 km. from Mapusa, a City in Northern Goa. It is close to Chapora Fort, an old Portuguese fort. Chapora is also close to a trawler-fishing jetty. Chapora is home to many cheapest travel accommodation houses found in entire Northern Goa. There is a famous Ganesh fruit juice center in Chapora selling organic juices and gathering people from around. "
+                 android:textSize="20sp"
+                 android:textColor="@color/black"/>
+             <TextView
+                 android:id="@+id/q_chapora"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/info_chapora"
+                 android:text="\nPlease give your ratings:- "
+                 android:textSize="20sp"
+                 android:textColor="@color/black"/>
+
+             <RatingBar
+                 android:id="@+id/rateChapore"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/q_chapora"/>
+         </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

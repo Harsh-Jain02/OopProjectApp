@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Places to Visit in Goa"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/chapore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chapora Beach"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="153dp" />
+
+    <Button
+        android:id="@+id/mandrem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mandrem Beach"
+        app:layout_constraintTop_toBottomOf="@+id/chapore"
+        tools:layout_editor_absoluteX="183dp" />
+
+    <Button
+        android:id="@+id/morjim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Morjim Beach"
+        app:layout_constraintTop_toBottomOf="@+id/mandrem"
+        tools:layout_editor_absoluteX="187dp" />
+
+    <Button
+        android:id="@+id/anjuna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Anjuna Beach"
+        app:layout_constraintTop_toBottomOf="@+id/morjim"
+        tools:layout_editor_absoluteX="174dp" />
+
+    <Button
+        android:id="@+id/bog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bogmalo Beach"
+        app:layout_constraintTop_toBottomOf="@+id/anjuna"
+        tools:layout_editor_absoluteX="139dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

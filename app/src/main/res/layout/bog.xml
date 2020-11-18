@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/heading_bog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Bogmalo Beach"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:textColor="@color/black"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/heading_bog">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgbog"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                app:srcCompat="@drawable/bogmalo" />
+            <TextView
+                android:id="@+id/info_bog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/imgbog"
+                android:text="Bogmalo is a small beach-side village in Goa, India. It is situated in a small bay with around a mile of curving sandy beach. The beach is located about 4 kilometres (2.5 mi) from Dabolim Airport and 9 kilometres (5.6 mi) from the port town of Vasco da Gama. It is known to host conferences for AIESEC India every June or July. A unique feature in Bogmalo is a pet boarding and training academy founded by internationally awarded animal behaviourist Gautam Kari. Called Kari's K9 Kamp, this canine facility is set in a beautiful Portuguese style villa and is a cage-free and leash-free facility. It is ideal for people going on vacation as the premises is close to Dabolim Airport. Services include overnight pet boarding, dog daycare, dog training and pet products delivery. "
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/q_bog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info_bog"
+                android:text="\nPlease give your ratings:- "
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <RatingBar
+                android:id="@+id/ratebog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/q_bog"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

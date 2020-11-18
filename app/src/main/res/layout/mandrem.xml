@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading_mandrem"
+        android:text="Mandrem Beach"
+        android:textSize="35sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/heading_mandrem">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgmandrem"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                app:srcCompat="@drawable/mandrem"
+                android:contentDescription="TODO" />
+            <TextView
+                android:id="@+id/info_mandrem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/imgmandrem"
+                android:textSize="20sp"
+                android:text="Upmarket Mandrem is known for its 2 quiet beaches, home to tucked-away cafes, yoga retreats and resort hotels. Mandrem Beach offers high-end accommodation in a secluded setting, while indie boutiques at Ashwem Beach sell designer fashion and jewelry. Both beaches have casual shacks serving seafood and western fare, while a handful of high-end spots on Mandrem Beach also offer Italian, French, and global cuisine."
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/q_mandrem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info_mandrem"
+                android:text="\nPlease give your ratings:- "
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <RatingBar
+                android:id="@+id/rateMandrem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/q_mandrem"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
